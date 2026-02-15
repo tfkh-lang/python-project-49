@@ -5,6 +5,7 @@ import prompt
 def is_even(num:int) -> bool:
     return num%2 == 0
 
+
 def brain_even():
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')

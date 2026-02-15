@@ -6,5 +6,6 @@
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=tfkh-lang_python-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=tfkh-lang_python-project-49)
 
 
-asciinema even:  https://asciinema.org/a/yi9K3tB33xURfBSv
+asciinema even: https://asciinema.org/a/yi9K3tB33xURfBSv
 asciinema calc: https://asciinema.org/a/rU0QO596EjjhlD2k
+asciinema gsd:  https://asciinema.org/a/VslnGFnDH5wOfcAw
