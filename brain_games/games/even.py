@@ -1,9 +1,10 @@
 from random import randint
-from brain_games.welcome_user import welcome_user
-import prompt 
 
-def is_even(num:int) -> bool:
-    return num%2 == 0
+from brain_games.welcome_user import welcome_user
+
+
+def is_even(num: int) -> bool:
+    return num % 2 == 0
 
 
 def brain_even():
@@ -27,4 +28,4 @@ def brain_even():
             return print(f"'{n}' is wrong answer ;(. Correct answer was '{y}'.\nLet's try again, {name}!!")
         elif not is_even(numb) and answer == y:
             return print(f"'{y}' is wrong answer ;(. Correct answer was '{n}'.\nLet's try again, {name}!!")
-    print ('You win!')
+    print('You win!')
