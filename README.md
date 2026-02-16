@@ -10,3 +10,4 @@ asciinema even: https://asciinema.org/a/yi9K3tB33xURfBSv
 asciinema calc: https://asciinema.org/a/rU0QO596EjjhlD2k
 asciinema gsd:  https://asciinema.org/a/VslnGFnDH5wOfcAw
 asciinema progression: https://asciinema.org/a/2YYMCWwxiQTAdRAw
+asciinema prime: https://asciinema.org/a/nU9MyL2HcdQKzuDm
