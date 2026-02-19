@@ -1,6 +1,6 @@
 from random import randint
 
-question = f'Answer "yes" if the number is even, otherwise answer "no".'
+question = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(num: int) -> bool:
@@ -14,5 +14,6 @@ def brain_even():
         return 'yes'
     else: 
         return 'no'
+    
     
 function = brain_even    

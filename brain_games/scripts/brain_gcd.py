@@ -1,4 +1,4 @@
-from brain_games import engin 
+from brain_games import engin
 from brain_games.games import gcd_module
 
 

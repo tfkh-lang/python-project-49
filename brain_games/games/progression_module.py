@@ -1,14 +1,14 @@
 from random import randint
 
-question = f'What number is missing in the progression?'
+
+question = 'What number is missing in the progression?'
+
 
 def sequence() -> list:
     progression = []
-
     start = randint(1, 1000)
     step = randint(1, 10)
     long = randint(5, 10)
-
     for i in range(long):
         currentElement = start + i * step
         progression.append(currentElement)
@@ -25,10 +25,12 @@ def hide_element_in_sequance():
     progression_str = ' '.join(map(str, progression))
     return progression_str, hide_element
 
+
 def game_progression(): 
     progression, element = hide_element_in_sequance()
     print(f'Question {progression}')
     return element
+
 
 function = game_progression
 

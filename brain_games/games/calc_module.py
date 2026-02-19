@@ -1,7 +1,6 @@
 from random import randint
 
-
-question = f'What is the result of the expression?'
+question = 'What is the result of the expression?'
 
 
 def brain_calc():
@@ -17,5 +16,6 @@ def brain_calc():
     if operator == '*':
         result = first_item * second_item
     return result
+
 
 function = brain_calc
