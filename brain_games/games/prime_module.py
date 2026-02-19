@@ -16,7 +16,7 @@ def is_prime(num: int) -> bool:
 
 def prime(): 
     num = randint(0, 100)
-    print(f'Qyestion: {num}')
+    print(f'Question: {num}')
     if is_prime(num): 
         return 'yes'
     else: 

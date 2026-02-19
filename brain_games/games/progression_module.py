@@ -28,7 +28,7 @@ def hide_element_in_sequance():
 
 def game_progression(): 
     progression, element = hide_element_in_sequance()
-    print(f'Question {progression}')
+    print(f'Question: {progression}')
     return element
 
 
