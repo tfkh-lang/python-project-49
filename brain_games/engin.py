@@ -18,6 +18,6 @@ def run(game: types.ModuleType):
             r += 1
         else: 
             print(f"'{answer}' is wrong answer. Correct answer was '{result}'.")
-            print(f"let's try again, {name}!")
+            print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
