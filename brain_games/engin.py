@@ -1,6 +1,5 @@
 from brain_games.welcome_user import welcome_user
 
-
 ALL_ROUNDS_OF_GAME = 3 
 
 def run(game: types.ModuleType):
