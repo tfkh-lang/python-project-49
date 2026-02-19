@@ -1,7 +1,6 @@
 from random import randint
 
-from brain_games.welcome_user import welcome_user
-
+question = f'What number is missing in the progression?'
 
 def sequence() -> list:
     progression = []
@@ -27,19 +26,10 @@ def hide_element_in_sequance():
     return progression_str, hide_element
 
 def game_progression(): 
-    name = welcome_user()
-    print('What number is missing in the progression?') 
-    i = 0
-    while i != 3:
-        progression, element = hide_element_in_sequance()
-        print(f'Question {progression}')
-        print('Your answer ', end='')
-        answer = (int(input()))
-        if answer == element: 
-            print('Correct!')
-            i += 1
-        else: 
-            return print(f"'{answer}' is wrong answer ;(. Correct answer was '{element}'. \nLet's try again, {name}!")
-    print('You win!')    
+    progression, element = hide_element_in_sequance()
+    print(f'Question {progression}')
+    return element
+
+function = game_progression
 
 

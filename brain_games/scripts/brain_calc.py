@@ -1,7 +1,9 @@
-from brain_games.games.calc import brain_calc 
+from brain_games import engin 
+from brain_games.games import calc_module
+
 
 def main():
-    brain_calc()
+    engin.run(calc_module)
 
 
 if __name__ == "__main__":

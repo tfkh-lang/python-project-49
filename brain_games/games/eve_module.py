@@ -1,0 +1,18 @@
+from random import randint
+
+question = f'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def is_even(num: int) -> bool:
+    return num % 2 == 0
+
+
+def brain_even():
+    numb = randint(1, 1000) 
+    print('Question: ', numb)
+    if is_even(numb):
+        return 'yes'
+    else: 
+        return 'no'
+    
+function = brain_even    
