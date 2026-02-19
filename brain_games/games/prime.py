@@ -24,14 +24,14 @@ def prime():
         answer = input()
         
         if is_prime(num) and answer == 'yes': 
-            print ('Correct!') 
+            print('Correct!') 
             i += 1
         elif is_prime(num) and answer == 'no':
-            return (print (f"'{answer}' is wrong answer ;(.\nLet's try again, {name}!"))
+            return(print(f"'{answer}' is wrong answer ;(.\nLet's try again, {name}!"))
         elif not is_prime(num) and answer == 'no':
             print('Correct!') 
             i += 1
         else: 
-            return (print(f"'{answer}' is wrong answer ;(.\nLet's try again, {name}!"))
+            return(print(f"'{answer}' is wrong answer ;(.\nLet's try again, {name}!"))
     print('You win!')   
 
