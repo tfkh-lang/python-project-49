@@ -11,7 +11,7 @@ def run(game: types.ModuleType):
     r = 0
     while r != ALL_ROUNDS_OF_GAME: 
         result = game.function()
-        print('Your answer ', end='')
+        print('Your answer: ', end='')
         answer = input()
         if str(result) == answer: 
             print('Correct!')

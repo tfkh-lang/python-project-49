@@ -9,11 +9,11 @@ def is_even(num: int) -> bool:
 
 def brain_even():
     numb = randint(1, 1000) 
-    print('Question: ', numb)
+    print(f'Question: {numb}')
     if is_even(numb):
         return 'yes'
     else: 
         return 'no'
     
     
-function = brain_even    
+function = brain_even
