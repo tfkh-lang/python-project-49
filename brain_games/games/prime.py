@@ -14,13 +14,12 @@ def is_prime(num: int) -> bool:
         return True
 
 
-def prime(): 
+def game() -> str: 
     num = randint(0, 100)
-    print(f'Question: {num}')
+    question = f'Question: {num}'
     if is_prime(num): 
-        return 'yes'
+        return 'yes', question
     else: 
-        return 'no'
+        return 'no', question
 
 
-game = prime

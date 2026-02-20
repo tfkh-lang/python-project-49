@@ -4,13 +4,10 @@ from random import randint
 question = 'Find the greatest common divisor of given numbers.'
 
 
-def brain_gcd(): 
+def game() -> str: 
     num1 = randint(1, 10)
     num2 = randint(1, 10)
-    print(f'Question: {num1} {num2}')
+    question = f'Question: {num1} {num2}'
     while num2 != 0: 
         num1, num2 = num2, num1 % num2
-    return num1 
-
-
-game = brain_gcd
+    return str(num1), question

@@ -7,13 +7,10 @@ def is_even(num: int) -> bool:
     return num % 2 == 0
 
 
-def brain_even():
+def game() -> str:
     numb = randint(1, 1000) 
-    print(f'Question: {numb}')
+    question = f'Question: {numb}'
     if is_even(numb):
-        return 'yes'
+        return 'yes', question
     else: 
-        return 'no'
-    
-    
-game = brain_even
+        return 'no', question

@@ -16,7 +16,7 @@ def sequence() -> list:
     return progression
 
 
-def hide_element_in_sequance(): 
+def hide_element_in_sequance() -> list: 
     progression = sequence()
     len_list = len(progression)
     hide_index = randint(0, len_list - 1)
@@ -26,12 +26,10 @@ def hide_element_in_sequance():
     return progression_str, hide_element
 
 
-def game_progression(): 
+def game() -> str: 
     progression, element = hide_element_in_sequance()
-    print(f'Question: {progression}')
-    return element
+    question = f'Question: {progression}'
+    return str(element), question
 
-
-game = game_progression
 
 

@@ -1,7 +1,7 @@
 from brain_games.welcome_user import welcome_user
 
 
-def main():
+def main() -> None:
     welcome_user()
 
 
