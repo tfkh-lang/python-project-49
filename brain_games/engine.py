@@ -2,20 +2,18 @@ import types
 
 from brain_games.welcome_user import welcome_user
 
-ALL_ROUNDS_OF_GAME = 3 
+GAME_ROUNDS_COUNT = 3 
 
 
-def run(game: types.ModuleType):
+def run(games: types.ModuleType):
     name = welcome_user()
-    print(game.question)
-    r = 0
-    while r != ALL_ROUNDS_OF_GAME: 
-        result = game.function()
+    print(games.question)
+    for round in range(GAME_ROUNDS_COUNT):
+        result = games.game()
         print('Your answer: ', end='')
         answer = input()
         if str(result) == answer: 
             print('Correct!')
-            r += 1
         else: 
             print(f"'{answer}' is wrong answer. Correct answer was '{result}'.")
             print(f"Let's try again, {name}!")

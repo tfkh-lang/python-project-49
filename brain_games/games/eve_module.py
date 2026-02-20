@@ -16,4 +16,4 @@ def brain_even():
         return 'no'
     
     
-function = brain_even
+game = brain_even

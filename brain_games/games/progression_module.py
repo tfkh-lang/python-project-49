@@ -32,6 +32,6 @@ def game_progression():
     return element
 
 
-function = game_progression
+game = game_progression
 
 

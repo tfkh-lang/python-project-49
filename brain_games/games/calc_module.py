@@ -18,4 +18,4 @@ def brain_calc():
     return result
 
 
-function = brain_calc
+game = brain_calc

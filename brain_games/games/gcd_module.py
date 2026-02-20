@@ -13,4 +13,4 @@ def brain_gcd():
     return num1 
 
 
-function = brain_gcd
+game = brain_gcd

@@ -23,4 +23,4 @@ def prime():
         return 'no'
 
 
-function = prime
+game = prime
