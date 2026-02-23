@@ -1,13 +1,15 @@
 from random import randint
 
-question = 'What is the result of the expression?'
+QUESTION = 'What is the result of the expression?'
 
 
-def game() -> str:
+def get_question_and_answer() -> tuple [str, str]:
     operator_list = ['+', '-', '*']
-    first_item = randint(0, 10)
-    second_item = randint(0, 10)
-    operator = operator_list[randint(0, 2)]
+    min_value = 0
+    max_value = 10
+    first_item = randint(min_value, max_value)
+    second_item = randint(min_value, max_value)
+    operator = operator_list[randint(0, len(operator_list)-1)]
     question = f'Question: {first_item} {operator} {second_item}'
     if operator == '+': 
         result = first_item + second_item
@@ -15,5 +17,4 @@ def game() -> str:
         result = first_item - second_item
     if operator == '*':
         result = first_item * second_item
-    return str(result), question
-
+    return question, str(result)

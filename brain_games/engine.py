@@ -5,11 +5,11 @@ from brain_games.welcome_user import welcome_user
 GAME_ROUNDS_COUNT = 3 
 
 
-def run(games: types.ModuleType) -> None:
+def run(game: types.ModuleType) -> None:
     name = welcome_user()
-    print(games.question)
-    for round in range(GAME_ROUNDS_COUNT):
-        result, question = games.game()
+    print(game.QUESTION)
+    for _ in range(GAME_ROUNDS_COUNT):
+        question, result = game.get_question_and_answer()
         print(question)
         print('Your answer: ', end='')
         answer = input()

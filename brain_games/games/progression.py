@@ -1,35 +1,23 @@
 from random import randint
 
 
-question = 'What number is missing in the progression?'
+QUESTION = 'What number is missing in the progression?'
 
 
-def sequence() -> list:
+def get_progression(start: int, length: int, step: int) -> list[int]:
     progression = []
-    start = randint(1, 1000)
-    step = randint(1, 10)
-    long = randint(5, 10)
-    for i in range(long):
-        currentElement = start + i * step
-        progression.append(currentElement)
-
+    for i in range(length):
+        current_element = start + i * step
+        progression.append(current_element)
     return progression
 
 
-def hide_element_in_sequance() -> list: 
-    progression = sequence()
-    len_list = len(progression)
-    hide_index = randint(0, len_list - 1)
-    hide_element = progression[hide_index]
-    progression[hide_index] = '..'
-    progression_str = ' '.join(map(str, progression))
-    return progression_str, hide_element
-
-
-def game() -> str: 
-    progression, element = hide_element_in_sequance()
-    question = f'Question: {progression}'
-    return str(element), question
-
-
-
+def get_question_and_answer() -> tuple[str, str]:
+    start = randint(1, 1000)
+    step = randint(1, 10)
+    length = randint(5, 10)
+    progression = get_progression(start, length, step)
+    hidden_index = randint(0, len(progression) - 1)
+    answer = progression[hidden_index]
+    progression[hidden_index] = '..'
+    return ' '.join(map(str,progression)), str(answer)
