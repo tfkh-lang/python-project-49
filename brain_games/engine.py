@@ -11,11 +11,11 @@ def run(game: types.ModuleType) -> None:
     for _ in range(GAME_ROUNDS_COUNT):
         question, answer = game.get_question_and_answer()
         print(question)
-        user_answer = input('Your answer: ')
-        if answer == user_answer: 
+        user_a = input('Your answer: ')
+        if answer == user_a: 
             print('Correct!')
         else: 
-            print(f"'{user_answer}' is wrong answer. Correct answer was '{answer}'.")
+            print(f"'{user_a}' is wrong answer. Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
