@@ -4,7 +4,7 @@ from random import randint
 QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
-def get_gsd(number_1, number_2) -> int: 
+def get_gsd(number_1: int, number_2: int) -> int: 
     while number_2 != 0: 
         number_1, number_2 = number_2, number_1 % number_2
     return number_1 

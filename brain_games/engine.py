@@ -14,10 +14,9 @@ def run(game: types.ModuleType) -> None:
         user_answer = input('Your answer: ')
         if answer == user_answer: 
             print('Correct!')
-        else: 
-            wrong_line_part_1 = f"'{user_answer}' is wrong answer."
-            wrong_line_part_2 = f" Correct answer was '{answer}'."
-            print(wrong_line_part_1 + wrong_line_part_2)
+        else:
+            print(f"'{user_answer}' is wrong answer. " 
+                  f"Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
