@@ -10,6 +10,7 @@ def is_prime(num: int) -> bool:
     for i in range(2, int(num**0.5) + 1):
         if num % i == 0:
             return False
+    return True
 
 
 def get_question_and_answer() -> tuple[str, str]: 
