@@ -3,7 +3,10 @@ from random import randint
 QUESTION = 'What is the result of the expression?'
 
 
-def get_answer_of_expression(first_term:int, second_term:int, operator: 'str') -> int:
+def get_answer_of_expression(
+    first_term: int, 
+    second_term: int, 
+    operator: 'str') -> int:
     if operator == '+': 
         answer = first_term + second_term
     if operator == '-':
@@ -11,6 +14,7 @@ def get_answer_of_expression(first_term:int, second_term:int, operator: 'str') -
     if operator == '*':
         answer = first_term * second_term 
     return answer 
+
 
 def get_question_and_answer() -> tuple[str, str]:
     operator_list = ['+', '-', '*']
