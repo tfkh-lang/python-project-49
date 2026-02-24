@@ -11,7 +11,4 @@ def get_question_and_answer() -> tuple[str, str]:
     min_value, max_value = 1, 1000
     number = randint(min_value, max_value) 
     question = f'Question: {number}'
-    if is_even(number):
-        return question, 'yes'
-    else: 
-        return question, 'no'
+    return question, 'yes' if is_even(number) else 'no'

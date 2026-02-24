@@ -9,14 +9,13 @@ def run(game: types.ModuleType) -> None:
     name = welcome_user()
     print(game.QUESTION)
     for _ in range(GAME_ROUNDS_COUNT):
-        question, result = game.get_question_and_answer()
+        question, answer = game.get_question_and_answer()
         print(question)
-        print('Your answer: ', end='')
-        answer = input()
-        if result == answer: 
+        user_answer = input('Your answer: ')
+        if answer == user_answer: 
             print('Correct!')
         else: 
-            print(f"'{answer}' is wrong answer. Correct answer was '{result}'.")
+            print(f"'{user_answer}' is wrong answer. Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')

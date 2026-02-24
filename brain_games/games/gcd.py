@@ -4,18 +4,16 @@ from random import randint
 QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
-def get_gsd() -> int: 
-    min_value, max_value = 1, 10
-    random_number_1 = randint(min_value, max_value)
-    random_number_2 = randint(min_value, max_value)
-    number_1 = random_number_1
-    number_2 = random_number_2
+def get_gsd(number_1, number_2) -> int: 
     while number_2 != 0: 
         number_1, number_2 = number_2, number_1 % number_2
-    return number_1, random_number_1, random_number_2
+    return number_1 
 
 
-def get_question_and_answer() -> tuple[str, str]: 
-    answer, num1, num2 = get_gsd()
-    question = f'Question: {num1} {num2}'
+def get_question_and_answer() -> tuple[str, str]:
+    min_value, max_value = 1, 10
+    number_1 = randint(min_value, max_value)
+    number_2 = randint(min_value, max_value)
+    answer = get_gsd(number_1, number_2)
+    question = f'Question: {number_1} {number_2}'
     return question, str(answer)
