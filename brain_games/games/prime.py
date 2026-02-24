@@ -13,8 +13,8 @@ def is_prime(num: int) -> bool:
     return True
 
 
-def get_question_and_answer() -> tuple[str, str]: 
+def get_question_and_answer() -> tuple[int, str]: 
     min_value, max_value = 0, 100
     num = randint(min_value, max_value)
-    question = f'Question: {num}'
+    question = num
     return question, 'yes' if is_prime(num) else 'no'

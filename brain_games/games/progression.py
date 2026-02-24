@@ -21,5 +21,5 @@ def get_question_and_answer() -> tuple[str, str]:
     answer = progression[hidden_index]
     progression[hidden_index] = '..'
     progression = ' '.join(map(str, progression))
-    question = f'Question: {progression}'
+    question = progression
     return question, str(answer)

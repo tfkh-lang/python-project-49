@@ -10,7 +10,7 @@ def run(game: types.ModuleType) -> None:
     print(game.QUESTION)
     for _ in range(GAME_ROUNDS_COUNT):
         question, answer = game.get_question_and_answer()
-        print(question)
+        print(f'Question: {question}')
         user_answer = input('Your answer: ')
         if answer == user_answer: 
             print('Correct!')
