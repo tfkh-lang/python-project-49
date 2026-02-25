@@ -1,19 +1,25 @@
+import operator as op
 from random import randint
+from typing import Literal
 
 QUESTION = 'What is the result of the expression?'
 
 
-def get_answer_of_expression(
-    first_term: int, 
-    second_term: int, 
-    operator: 'str') -> int:
-    if operator == '+': 
-        answer = first_term + second_term
-    if operator == '-':
-        answer = first_term - second_term
-    if operator == '*':
-        answer = first_term * second_term 
-    return answer 
+def apply_operator(
+    num1: int,
+    num2: int,
+    operator: Literal['*', '+', '-']
+) -> int:
+    match operator:
+        case '+':
+            action = op.add
+        case '-':
+            action = op.sub
+        case '*':
+            action = op.mul
+        case _:
+            raise ValueError(f'Unexpected operator {operator}')
+    return action(num1, num2)
 
 
 def get_question_and_answer() -> tuple[str, str]:
@@ -24,5 +30,5 @@ def get_question_and_answer() -> tuple[str, str]:
     second_term = randint(min_value, max_value)
     operator = operator_list[randint(0, len(operator_list) - 1)]
     question = f'{first_term} {operator} {second_term}'
-    answer = get_answer_of_expression(first_term, second_term, operator)
+    answer = apply_operator(first_term, second_term, operator)
     return question, str(answer)
