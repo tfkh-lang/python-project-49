@@ -7,8 +7,7 @@ def is_even(num: int) -> bool:
     return num % 2 == 0
 
 
-def get_question_and_answer() -> tuple[int, str]:
+def get_question_and_answer() -> tuple[str, str]:
     min_value, max_value = 1, 1000
     number = randint(min_value, max_value) 
-    question = number
-    return question, 'yes' if is_even(number) else 'no'
+    return str(number), 'yes' if is_even(number) else 'no'
