@@ -20,5 +20,5 @@ def get_question_and_answer() -> tuple[str, str]:
     hidden_index = randint(0, len(progression) - 1)
     answer = progression[hidden_index]
     progression[hidden_index] = '..'
-    progression = ' '.join(map(str, progression))
-    return progression, str(answer)
+    progression_str = ' '.join(map(str, progression))
+    return progression_str, str(answer)
